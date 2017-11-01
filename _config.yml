@@ -2,14 +2,14 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  # 随笔: /tags/随笔/
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/tywei90"
+  # weibo: "http://weibo.com/1762959307/profile"
+  # rss: "#"
+  # zhihu: "https://www.zhihu.com/people/tywei90"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -17,13 +17,13 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  #mail: "mailto:litten225@qq.com"
+  mail: "mailto:tywei90@163.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
   #linkedin: "#"
 
-rss: /atom.xml
+# rss: /atom.xml
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
@@ -39,17 +39,17 @@ show_all_link: '展开全文'
 # 数学公式
 mathjax: false
 # 是否在新窗口打开链接
-open_in_new: false
+open_in_new: true
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 1
 # 打赏wording
 reward_wording: '谢谢你请我吃糖果'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
-alipay: 
+alipay: /assets/blogImg/zfb.jpeg
 # 微信二维码图片地址
-weixin: 
+weixin: /assets/blogImg/wx.jpeg
 
 # 目录
 # 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
@@ -64,11 +64,11 @@ top: true
 
 # Miscellaneous
 baidu_analytics: ''
-google_analytics: ''
-favicon: /favicon.png
+google_analytics: 'UA-87250582-1'
+favicon: /assets/blogImg/favicon.ico
 
 #你的头像url
-avatar:
+avatar: /assets/blogImg/avatar.png
 
 #是否开启分享
 share_jia: true
@@ -81,7 +81,7 @@ share_jia: true
 duoshuo: false
 
 #2、网易云跟帖
-wangyiyun: false
+wangyiyun: true
 
 #3、畅言
 changyan_appid: false
@@ -116,15 +116,12 @@ slider:
 #  friends: false
 smart_menu:
   innerArchive: '所有文章'
-  friends: '友链'
+  friends: '项目'
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  前端制作工具: https://pagemaker.wty90.com
+  CMS博客系统: https://cms.wty90.com
+  Hybrid APP: https://ionic.wty90.com
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: Teal</br>西电12级</br>目前是一枚前端</br></br>上海华为工作半年</br>现就职于北京网易</br></br>喜欢打篮球</br>自认为技术还不错
