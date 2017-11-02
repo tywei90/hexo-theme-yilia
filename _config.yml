@@ -7,6 +7,7 @@ menu:
 # SubNav
 subnav:
   github: "https://github.com/tywei90"
+  mail: "mailto:tywei90@163.com"
   # weibo: "http://weibo.com/1762959307/profile"
   # rss: "#"
   # zhihu: "https://www.zhihu.com/people/tywei90"
@@ -17,7 +18,6 @@ subnav:
   #segmentfault: "#"
   #bilibili: "#"
   #acfun: "#"
-  mail: "mailto:tywei90@163.com"
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -28,7 +28,7 @@ subnav:
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
 # 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
-root: 
+root: /
 
 # Content
 
@@ -81,11 +81,11 @@ share_jia: true
 duoshuo: false
 
 #2、网易云跟帖
-wangyiyun: true
+wangyiyun: false
 
 #3、畅言
-changyan_appid: false
-changyan_conf: false
+changyan_appid: cytih7p2j
+changyan_conf: b0301403b88544041b5fcb0aa5fe9271
 
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 disqus: false
