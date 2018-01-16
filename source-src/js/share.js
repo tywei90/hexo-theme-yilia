@@ -1,6 +1,7 @@
 import addClass from 'dom101/add-class'
 import removeClass from 'dom101/remove-class'
 import QRCode from './qrcode'
+let ca = {};
 
 function generate(url, opts) {
     var url = url.replace(/<%-sUrl%>/g, encodeURIComponent(opts.sUrl))
@@ -17,11 +18,13 @@ function showWX(url) {
     addClass($wx, 'in')
     addClass($wx, 'ready')
     addClass($mask, 'in')
-    var qrcode = new QRCode(document.querySelector(".wx-qrcode"), {
-        width : 200,
-        height : 200
-    });
-    qrcode.makeCode(url);
+    if(!ca.qrcode){
+        ca.qrcode = new QRCode(document.querySelector(".wx-qrcode"), {
+            width : 200,
+            height : 200
+        });
+        ca.qrcode.makeCode(url);
+    }
 }
 
 function hideWX() {
