@@ -1,5 +1,6 @@
 import addClass from 'dom101/add-class'
 import removeClass from 'dom101/remove-class'
+import QRCode from './qrcode'
 
 function generate(url, opts) {
     var url = url.replace(/<%-sUrl%>/g, encodeURIComponent(opts.sUrl))
@@ -10,12 +11,17 @@ function generate(url, opts) {
     window.open(url);
 }
 
-function showWX() {
+function showWX(url) {
     let $wx = document.querySelector('.js-wx-box')
     let $mask = document.querySelector('.mask')
     addClass($wx, 'in')
     addClass($wx, 'ready')
     addClass($mask, 'in')
+    var qrcode = new QRCode(document.querySelector(".wx-qrcode"), {
+        width : 200,
+        height : 200
+    });
+    qrcode.makeCode(url);
 }
 
 function hideWX() {
@@ -42,7 +48,7 @@ function handleClick(type, opts) {
 	} else if (type === 'google') {
 		generate('https://plus.google.com/share?url=<%-sUrl%>', opts)
 	} else if (type === 'weixin') {
-		showWX();
+		showWX(opts.sUrl);
 	}
 }
 
