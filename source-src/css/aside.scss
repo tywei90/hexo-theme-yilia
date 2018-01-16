@@ -93,12 +93,12 @@
         min-width: 200px;
         width: initial;
         font-size: 14px;
-        text-shadow: 1px 1px 1px #398199;
+        // text-shadow: 1px 1px 1px #398199;
         bottom: -10px;
         transform-origin: 100% 100%;
         transform: translate3d(0, -10px, 0) rotate3d(1, 1, 1, -30deg);
         a {
-            color: #fff;
+            color: #000;
         }
         &::after {
             top: initial;
