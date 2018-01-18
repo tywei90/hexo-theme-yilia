@@ -1,161 +1,167 @@
-.article-entry pre,
-.article-entry .highlight {
-  background: #272822;
-  margin: 10px 0;
-  padding: 10px 10px;
+// 可以更改博客主题为NexT(http://theme-next.iissnan.com/theme-settings.html)，然后拷贝代码高亮css覆盖下面的。
+// 本代码是NexT主题配置，highlight_theme: normal的样式。
+// 其实采用的Tomorrow Theme主题(https://github.com/chriskempson/tomorrow-theme)
+
+pre,
+.highlight {
   overflow: auto;
-  color: #fff;
-  font-size: 0.9em;
-  line-height: 22.400000000000002px;
+  margin: 20px 0;
+  padding: 0;
+  font-size: 13px;
+  color: #4d4d4c;
+  background: #f7f7f7;
+  line-height: 1.6;
 }
-.article-entry .highlight .gutter pre,
-.article-entry .highlight .gutter pre .line,
-.article-entry .gist .gist-file .gist-data .line-numbers {
-  color: #666;
+pre,
+code {
+  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
-.article-entry pre,
-.article-entry code {
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-}
-.article-entry code {
+code {
+  padding: 2px 4px;
+  word-wrap: break-word;
+  color: #555;
   background: #eee;
-  padding: 0 0.3em;
-  border: none;
+  border-radius: 3px;
+  font-size: 13px;
 }
-.article-entry pre code {
+pre {
+  padding: 10px;
+}
+pre code {
+  padding: 0;
+  color: #4d4d4c;
   background: none;
   text-shadow: none;
-  padding: 0;
-  color: #fff;
 }
-
-.article-entry .highlight {
-  border-radius: 4px;
+.highlight {
+  border-radius: 3px;
 }
-.article-entry .highlight pre {
+.highlight pre {
   border: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
 }
-.article-entry .highlight table {
+.highlight table {
   margin: 0;
   width: auto;
+  border: none;
 }
-.article-entry .highlight td {
+.highlight td {
   border: none;
   padding: 0;
 }
-.article-entry .highlight figcaption {
-  color: highlight-comment;
+.highlight figcaption {
+  font-size: 1em;
+  color: #4d4d4c;
   line-height: 1em;
   margin-bottom: 1em;
 }
-.article-entry .highlight figcaption:before,
-.article-entry .highlight figcaption:after {
-  content: "";
+.highlight figcaption:before,
+.highlight figcaption:after {
+  content: " ";
   display: table;
 }
-.article-entry .highlight figcaption:after {
+.highlight figcaption:after {
   clear: both;
 }
-.article-entry .highlight figcaption a {
+.highlight figcaption a {
   float: right;
+  color: #4d4d4c;
 }
-.article-entry .highlight .gutter pre {
+.highlight figcaption a:hover {
+  border-bottom-color: #4d4d4c;
+}
+.highlight .gutter pre {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #869194;
   text-align: right;
-  padding-right: 20px;
+  background-color: #eff2f3;
 }
-.article-entry .highlight .gutter pre .line {
-  text-shadow: none;
+.highlight .code pre {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f7f7f7;
 }
-.article-entry .highlight .line {
-  color: #fff;
-  min-height: 19px;
+.highlight .line {
+  height: 20px;
 }
-.article-entry .gist {
-  margin: 0 -20px;
-  border-style: solid;
-  border-color: #ddd;
-  border-width: 1px 0;
-  background: #272822;
-  padding: 15px 20px 15px 0;
+.gutter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.article-entry .gist .gist-file {
-  border: none;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  margin: 0;
+.gist table {
+  width: auto;
 }
-.article-entry .gist .gist-file .gist-data {
-  background: none;
+.gist table td {
   border: none;
 }
-.article-entry .gist .gist-file .gist-data .line-numbers {
-  background: none;
-  border: none;
-  padding: 0 20px 0 0;
+pre .deletion {
+  background: #fdd;
 }
-.article-entry .gist .gist-file .gist-data .line-data {
-  padding: 0 !important;
+pre .addition {
+  background: #dfd;
 }
-.article-entry .gist .gist-file .highlight {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-.article-entry .gist .gist-file .gist-meta {
-  background: #272822;
-  color: highlight-comment;
-  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-shadow: 0 0;
-  padding: 0;
-  margin-top: 1em;
-  margin-left: 20px;
-}
-.article-entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
-  font-weight: normal;
-}
-.article-entry .gist .gist-file .gist-meta a:hover {
-  text-decoration: underline;
+pre .meta {
+  color: #8959a8;
 }
 pre .comment {
-  color: #75715e;
+  color: #8e908c;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .command {
+  color: #f5871f;
+}
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .number,
+pre .formula {
+  color: #718c00;
+}
+pre .title,
+pre .css .hexcolor {
+  color: #3e999f;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae;
 }
 pre .keyword,
-pre .function .keyword,
-pre .class .params {
-  color: #66d9ef;
-}
-pre .tag,
-pre .doctype,
-pre .params,
-pre .function,
-pre .css .value {
-  color: #fff;
-}
-pre .css ~ * .tag,
-pre .title,
-pre .at_rule,
-pre .at_rule .keyword,
-pre .preprocessor,
-pre .preprocessor .keyword {
-  color: #f92672;
-}
-pre .attribute,
-pre .built_in,
-pre .class,
-pre .css ~ * .class,
-pre .function .title {
-  color: #a6e22e;
-}
-pre .value,
-pre .string {
-  color: #e6db74;
-}
-pre .number {
-  color: #7163d7;
-}
-pre .id,
-pre .css ~ * .id {
-  color: #fd971f;
+pre .javascript .function {
+  color: #8959a8;
 }

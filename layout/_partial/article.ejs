@@ -70,6 +70,9 @@
         <%- partial('post/share') %>
       <% } %>
       <div class="clearfix"></div>
+      <% if (!index){ %>
+        <div class="copyright">&copy;本博客上所有文章，未经允许，不得转载！</div>
+      <% } %>
     </div>
   </div>
 </article>
