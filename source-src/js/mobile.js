@@ -91,7 +91,7 @@ function bindScroll() {
 }
 
 function init() {
-	if (Browser.versions.mobile && window.screen.width < 800) {
+	if (Browser.versions.mobile && window.screen.width < 1000) {
 		tabActive()
 		bindScroll()
 	}

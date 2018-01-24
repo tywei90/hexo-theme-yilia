@@ -3,6 +3,9 @@ html, body, #container {
     overflow-x: hidden;
     overflow-y: auto;
 }
+#container{
+    background: transparent!important;
+}
 #mobile-nav {
 	display: block;
 }
@@ -22,7 +25,8 @@ html, body, #container {
     }
 }
 .wrap-side-operation {
-    display: none;
+    right: 10px;
+    bottom: 30px;
 }
 .cloud-tie-wrapper {
 	padding: 0;
@@ -30,7 +34,8 @@ html, body, #container {
 }
 .tools-col {
     left: -300px;
-    width: 300px;
+    width: 335px;
+    background: linear-gradient(200deg,#a0cfe4,#e8c37e);
     .tools-wrap {
         padding-top: 48px;
     }
@@ -49,6 +54,7 @@ html, body, #container {
     &.show {
         .header-menu{
             &.tools-nav {
+                padding-right: 35px;
                 display: block;
             }
         }
@@ -293,7 +299,7 @@ html, body, #container {
     bottom: 0;
     .footer-left{
         float: initial;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
     .footer-right{
         float: initial;

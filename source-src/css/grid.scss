@@ -1,19 +1,20 @@
 body, button, input, select, textarea {
-    color: #1a1a1a;
-    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.75;
 }
 body {
 	overflow-y: hidden;
-	background:#eaeaea;
+	background:#f5f5f5;
 }
 html, body, #container {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 #mobile-nav {
 	display: none;
 }
@@ -34,14 +35,13 @@ html, body, #container {
   margin-bottom: 80px;
 }
 .mid-col {
+	text-align: justify;
 	position:absolute;
-	right:0;
-	min-height:100%;
-	background:#eaeaea;
 	left: 300px;
-	width: auto;
+	min-height:100%;
+	background:#f5f5f5;
 	@extend %trans;
-	&.show {
+	&.show:not(.isThree) {
 		background: none;
 		opacity: .9;
 		@extend %anmLeftIn;
@@ -50,7 +50,16 @@ html, body, #container {
 			background: rgba(255,255,255,.3);
 		}
 	}
-	&.hide {
+	&.hide:not(.isThree) {
 		@extend %anmLeftOut;
 	}
 }
+
+
+
+
+
+
+
+
+

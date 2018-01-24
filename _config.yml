@@ -2,14 +2,15 @@
 
 menu:
   主页: /
+  归档: /archives
   # 随笔: /tags/随笔/
 
 # SubNav
 subnav:
   github: "https://github.com/tywei90"
   mail: "mailto:tywei90@163.com"
+  rss: /atom.xml
   # weibo: "http://weibo.com/1762959307/profile"
-  # rss: "#"
   # zhihu: "https://www.zhihu.com/people/tywei90"
   #qq: "#"
   #weixin: "#"
@@ -23,7 +24,7 @@ subnav:
   #twitter: "#"
   #linkedin: "#"
 
-# rss: /atom.xml
+rss: /atom.xml
 
 # 是否需要修改 root 路径
 # 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
@@ -125,4 +126,6 @@ friends:
   立马理财爬虫: https://lmlc.wty90.com
   Hybrid APP: https://ionic.wty90.com
 
-aboutme: Teal</br>西电12级</br>目前是一枚前端</br></br>上海华为工作半年</br>现就职于北京网易</br></br>喜欢打篮球</br>自认为技术还不错
+aboutme: Teal</br>西电本硕</br>目前是一枚前端</br></br>上海华为工作半年</br>现就职于北京网易</br></br>喜欢打篮球</br>自认为技术还不错
+
+

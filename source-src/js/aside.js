@@ -3,7 +3,12 @@ var backTop = function (domE, ctn, distance) {
     var timer = null;
     var _onscroll = window.onscroll,
         _onclick = domE.onclick;
-    (ctn || window).onscroll = throttle(function () {
+    var scrollDom = ctn;
+    // 解决手机scroll事件不触发的bug
+    if(window.screen.width < 1000){
+        scrollDom = window;
+    }
+    scrollDom.onscroll = throttle(function () {
         typeof _onscroll === 'function' && _onscroll.apply(this, arguments);
         toggleDomE();
     }, 100);

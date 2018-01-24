@@ -22,7 +22,7 @@
 .jump-container {
     &:hover {
         .icon-back {
-            background: rgba(36, 193, 246, 0.9);
+            background: rgba(36, 193, 246, 1);
         }
     }
 }
@@ -31,7 +31,7 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
-    opacity: .8;
+    opacity: .86;
 }
 .jump-plan-container {
     position: absolute;
@@ -72,7 +72,7 @@
     margin-top: 10px;
     transition: 0.3s;
     &:hover {
-        background: rgba(36, 193, 246, 0.9);
+        background: rgba(36, 193, 246, 1);
     }
     .icon-font {
         font-size: 22px;
@@ -88,7 +88,7 @@
     .tooltip-east .tooltip-content {
         min-height: 100px;
         text-align: left;
-        padding: 5px 0 5px 20px;
+        padding: 10px 0 10px 20px;
         right: 4.7em;
         min-width: 200px;
         width: initial;

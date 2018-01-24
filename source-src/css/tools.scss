@@ -1,8 +1,7 @@
 .tools-col {
-    width: 300px;
+    width: 360px;
     height: 100%;
     position: fixed;
-    left: 0;
     top: 0;
     z-index: 0;
     padding: 0;
@@ -10,11 +9,11 @@
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     @extend %trans;
-    &.show {
+    &.show:not(.isThree) {
         opacity: 1;
         @extend %anmSmallLeftIn;
     }
-    &.hide {
+    &.hide:not(.isThree) {
         @extend %anmSmallLeftOut;
         z-index: 0;
     }
@@ -65,7 +64,8 @@
             .search-tag-wording {
                 font-size: 12px;
                 float: right;
-                margin: 4px 75px 0 0;
+                margin: 5px 83px 0 0;
+                color: #fffdd8;
             }
             .search-switch {
                 width: 40px;
@@ -74,10 +74,10 @@
             }
             .search-switch input {
                 width: 40px;
-                height: 14px;
+                height: 20px;
                 position: absolute;
                 top: 0;
-                right: 30px;
+                right: 38px;
                 z-index: 2;
                 border: 0;
                 background: 0 0;
@@ -86,9 +86,9 @@
             }
             .search-switch input:before {
                 content: '';
-                width: 40px;
-                height: 14px;
-                border: 1px solid #bdcabc;
+                width: 46px;
+                height: 20px;
+                border: 1px solid #fff;
                 background-color: #fdfdfd;
                 border-radius: 20px;
                 cursor: pointer;
@@ -96,8 +96,8 @@
                 position: relative;
                 vertical-align: middle;
                 box-sizing: content-box;
-                box-shadow: #dfdfdf 0 0 0 0 inset;
-                transition: border .4s,box-shadow .4s;
+                // box-shadow: #dfdfdf 0 0 0 0 inset;
+                // transition: border .4s,box-shadow .4s;
                 background-clip: content-box
             }
 
@@ -105,7 +105,7 @@
                 border-color: #64bd63;
                 box-shadow: #64bd63 0 0 0 0.16rem inset;
                 background-color: #64bd63;
-                transition: border .4s,box-shadow .4s,background-color 1.2s;
+                // transition: border .4s,box-shadow .4s,background-color 1.2s;
             }
             .search-switch input:checked:after {
                 left: 27px;
@@ -113,15 +113,15 @@
             }
             .search-switch input:after {
                 content: '';
-                width: 14px;
-                height: 14px;
+                width: 20px;
+                height: 20px;
                 position: absolute;
                 top: 16px;
-                left: 2px;
+                left: 1px;
                 -webkit-transform: translateY(-50%);
                 border-radius: 100%;
                 background-color: #91c0f1;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+                // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
                 -webkit-transition: left .2s;
                 transition: left .2s;
                 cursor: pointer;

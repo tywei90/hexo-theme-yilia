@@ -30,7 +30,7 @@
 
     .tooltip-content {
         position: absolute;
-        background: rgba(36,193,246,0.9);
+        background: rgb(36,193,246);
         z-index: 9999;
         width: 200px;
         bottom: 50%;
@@ -79,8 +79,8 @@
     }
 
     .tooltip-content::before {
-        height: 100%;
-        width: 3em;
+        // height: 100%;
+        // width: 3em;
     }
 
     .tooltip-content::after {

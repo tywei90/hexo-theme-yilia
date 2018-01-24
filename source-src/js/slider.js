@@ -13,7 +13,7 @@ window.fetch = window.fetch || fetch
 
 let localTagKey = 'yilia-tag'
 let localSearchKey = 'yilia-search'
-const isMobile = (Browser.versions.mobile && window.screen.width < 800)
+const isMobile = (Browser.versions.mobile && window.screen.width < 1000)
 
 function fixzero(str) {
 	str = str + ''
@@ -31,15 +31,16 @@ function init() {
 	let app = new Q({
 	    el: '#container',
 	    data: {
-			isCtnShow: false,
-			isShow: 0,
-			innerArchive: false,
+			isCtnShow: window.innerWidth >= 1440,
+			isShow: window.innerWidth >= 1440?true:0,
+			innerArchive: window.innerWidth >= 1440,
 			friends: false,
 			aboutme: false,
 			items: [],
 			jsonFail: false,
 			showTags: false,
-			search: ''
+			search: '',
+			isThree: window.innerWidth >= 1440
 		},
 	    methods: {
 	    	stop: (e) => {
@@ -97,6 +98,13 @@ function init() {
 	    	}
 	    },
 	    ready: () => {
+	    	window.onresize = function(){
+	    		if(window.innerWidth >= 1440){
+	    			app.$set('isThree', true)
+	    		}else{
+	    			app.$set('isThree', false)
+	    		}
+	    	}
 	    }
 	})
 
@@ -154,7 +162,7 @@ function init() {
 
 	// 隐藏
 	document.querySelector('#container').onclick = (e) => {
-		if (app.isShow) {
+		if (app.isShow && !app.isThree) {
 			app.$set('isShow', false)
 			setTimeout(() => {
 				app.$set('isCtnShow', false)
