@@ -61,6 +61,9 @@ html, body, #container {
     }
 }
 
+.tooltip-left .tooltip-content::before{
+    width: 0;
+}
 #container .header-author.fixed {
     position: fixed;
     top: -29px;

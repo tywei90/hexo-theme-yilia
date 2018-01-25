@@ -92,6 +92,9 @@ function init() {
 	    	tagformat: (str) => {
 	    		return '#' + str
 	    	},
+	    	classformat: (str) => {
+	    		return 'color' + (str.length % 5 + 1)
+	    	},
 	    	dateformat: (str) => {
 	    		let d = new Date(str)
 	    		return d.getFullYear() + '-' + fixzero((d.getMonth() + 1)) + '-' + fixzero(d.getDate())
