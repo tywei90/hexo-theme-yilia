@@ -228,6 +228,10 @@ input[type="submit"] {
     -webkit-appearance: button; // 2
     cursor: pointer; // 3
 }
+input[type="text"],textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 
 // Re-set default cursor for disabled elements.
 [disabled] {

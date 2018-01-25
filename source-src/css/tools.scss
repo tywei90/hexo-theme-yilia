@@ -87,8 +87,8 @@
             .search-switch input:before {
                 content: '';
                 width: 46px;
-                height: 20px;
-                border: 1px solid #fff;
+                height: 22px;
+                // border: 1px solid #fff;
                 background-color: #fdfdfd;
                 border-radius: 20px;
                 cursor: pointer;
@@ -108,7 +108,7 @@
                 // transition: border .4s,box-shadow .4s,background-color 1.2s;
             }
             .search-switch input:checked:after {
-                left: 27px;
+                left: 25px;
                 background: #fff;
             }
             .search-switch input:after {
