@@ -27,6 +27,18 @@ html, body, #container {
 .module-mobile-cmt-float-bar{
     display: none!important;
 }
+#article-nav .article-nav-link-wrap {
+  position: relative;
+  .article-nav-title{
+    padding-left: 22px;
+  }
+  .icon-circle-left,.icon-circle-right{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    margin:0;
+  }
+}
 .wrap-side-operation {
     display: none;
     right: 10px;
