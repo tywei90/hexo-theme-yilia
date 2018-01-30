@@ -1,10 +1,15 @@
 hexo-theme-yilia
 ================
-> 这是从yilia主题作者litten那边fork的一个仓库，为了后面能对这个主题的修改做备份。
-> 注意：这个仓库是blogBackup仓库的子仓库，所以不被作为更改提交的对象。
-> 对应的远程仓库：https://github.com/tywei90/hexo-theme-yilia.git
-> 主题做更改后要用webpack编译打包之后再hexo操作才能对线上博客生效
 
+效果可以访问[我的博客](https://www.wty90.com/)，对原主题的一些修改如下：
+
+1. 增加对大屏的适配，防止内容区过宽视觉不好看，同时将所有文章等信息直接展示在右侧，方便操作
+2. 代码高亮采用[tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)白色底主题
+3. 博客支持https(原主题分享微信采用jiathis产生二维码不支持https)
+4. 移动端侧边栏背景色优化
+5. 优化文字字体、文字颜色、标签颜色、radio样式、文字过长错行bug等
+
+下面是原主题Readme：
 
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
 崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。           
