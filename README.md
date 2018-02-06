@@ -8,6 +8,7 @@ hexo-theme-yilia
 3. 博客支持https(原主题分享微信采用jiathis产生二维码不支持https)
 4. 移动端侧边栏背景色优化
 5. 优化文字字体、文字颜色、标签颜色、radio样式、文字过长错行bug等
+6. 修复yilia的webpack配置错误，导致每次生成的文件没有被删除
 
 下面是原主题Readme：
 
