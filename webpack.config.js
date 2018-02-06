@@ -56,6 +56,7 @@ module.exports = {
     return [autoprefixer];
   },
   plugins: [
+    new CleanPlugin('./source'),
     new ExtractTextPlugin('[name].[chunkhash:6].css'),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'
@@ -91,7 +92,6 @@ if (process.env.NODE_ENV === 'production') {
         warnings: false
       }
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new CleanPlugin('builds')
+    new webpack.optimize.OccurenceOrderPlugin()
   ])
 }
